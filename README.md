@@ -6,17 +6,22 @@
 -Is the slope of the linear model considered to be zero? Why or why not?
 -Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
-lm image
+![lm image](https://github.com/lnshewmo/MechaCar_Statistical_Analysis/blob/main/images/MechaCar_LM.png)
 
 
 ## Summary Statistics on Suspension Coils
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
-total and lot summary images
+total summary
+![total](https://github.com/lnshewmo/MechaCar_Statistical_Analysis/blob/main/images/total_summary.png)
+
+lot summary
+![lot](https://github.com/lnshewmo/MechaCar_Statistical_Analysis/blob/main/images/lot_summary.png)
 
 ## T-Tests on Suspension Coils
 
+![ttest](https://github.com/lnshewmo/MechaCar_Statistical_Analysis/blob/main/images/PSI_ttest.png)
 summary and interpretation
 
 ## Study Design: MechaCar vs Competition
