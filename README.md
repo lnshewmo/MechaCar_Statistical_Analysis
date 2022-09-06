@@ -1,13 +1,28 @@
-# MechaCar_Statistical_Analysis
+# MechaCar Statistical Analysis
+
+Using R to review production data for factors affecting vehicle performance 
 
 ## Linear Regression to Predict MPG
 
--Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
--Is the slope of the linear model considered to be zero? Why or why not?
--Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+The following metrics were collected on 50 prototype vehicles:
+- vehicle length
+- vehicle weight
+- spoiler angle
+- ground clearance
+- AWD (all-wheel drivetrain)
+- mpg (miles per gallon)
+
+The goal is to design a linear model to predict mpg.
+Using R, the following data summary was generated:
 
 ![lm image](https://github.com/lnshewmo/MechaCar_Statistical_Analysis/blob/main/images/MechaCar_LM.png)
 
+These variables provided a non-random amount of variance to the mpg values in the dataset at a significance level of 0.05:
+  - vehicle length and ground clearance
+
+The slope of the linear model 
+-Is the slope of the linear model considered to be zero? Why or why not?
+-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
 ## Summary Statistics on Suspension Coils
 
