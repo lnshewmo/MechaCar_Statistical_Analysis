@@ -29,23 +29,39 @@ This indicates that vehicle length and ground clearance have a significant relat
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. 
 
 Table 1: summary statistics for weight capacities (PSI) of MechaCar suspension coils
+
 ![total](https://github.com/lnshewmo/MechaCar_Statistical_Analysis/blob/main/images/total_summary.png)
 
 Table 2: summary statistics for weight capacities (PSI) of 3 different production lots of suspension coils 
+
 ![lot](https://github.com/lnshewmo/MechaCar_Statistical_Analysis/blob/main/images/lot_summary.png)
 
 The current manufacturing data meets this design specification for all manufacturing lots in total.  Individually, Lot 3 exceeds this specification and contributes the most to the variance in overall PSI.
 
 ## T-Tests on Suspension Coils
 
+T-tests were performed to determine if all manufacturing lots and each individual lot are statistically different from the population mean of 1,500 PSI.
+
+Figure 1:  t-test for all manufacturing lots and population mean
+
 ![ttest](https://github.com/lnshewmo/MechaCar_Statistical_Analysis/blob/main/images/PSI_ttest.png)
+The overall mean is not different from the population mean at a significance level of 0.05 but it is different at a significance level of 0.10.
+
+Figure 2:  t-test for Lot 1 and population mean
 
 ![ttest](https://github.com/lnshewmo/MechaCar_Statistical_Analysis/blob/main/images/lot1.png)
+Lot 1 mean is equivalent to the population mean.
+
+Figure 3:  t-test for Lot 2 and population mean
 
 ![ttest](https://github.com/lnshewmo/MechaCar_Statistical_Analysis/blob/main/images/lot2.png)
+Lot 2 mean is equal to the population mean.
+
+Figure 4:  t-test for Lot 3 and population mean
 
 ![ttest](https://github.com/lnshewmo/MechaCar_Statistical_Analysis/blob/main/images/lot3.png)
-summary and interpretation
+Lot 3 is significantly different from the population mean as indicated by the p-value of 0.04168.
+This lot does not meet specification.
 
 ## Study Design: MechaCar vs Competition
 
