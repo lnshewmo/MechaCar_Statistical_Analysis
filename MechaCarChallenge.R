@@ -3,16 +3,50 @@
 library(dplyr)
 
 ## get the MechaCar_mpg.csv dataset
-MechaCar<- read.csv(file="~/Bootcamp/MechaCar_Statistical_Analysis/MechaCar_mpg.csv")
+MechaCar_mpg<- read.csv(file="resources/MechaCar_mpg.csv")
 
 head(MechaCar)
+
+## correlation analysis for all variables
+matrix<- as.matrix(MechaCar[,c('mpg', 'vehicle_length', 'vehicle_weight', 'spoiler_angle', 'ground_clearance', 'AWD')])
+cor(matrix)
+
+## correlation analysis doesn't change with removal of variables
+matrix<- as.matrix(MechaCar[,c('mpg', 'vehicle_length', 'ground_clearance')])
+cor(matrix)
 
 ## linear regression of all variables against mpg
 summary(lm(mpg~vehicle_length+ vehicle_weight+ spoiler_angle+ ground_clearance+ AWD, data=MechaCar))
 
+## linear regression of a reduced model
+summary(lm(mpg~vehicle_length+ vehicle_weight+ ground_clearance, data=MechaCar))
+
+## linear regression of a further reduced model
+summary(lm(mpg~vehicle_length+ ground_clearance, data=MechaCar))
+
+## lm one variable
+summary(lm(mpg~vehicle_length, data=MechaCar))
+
+## plot the lm for vehicle length
+model<- lm(mpg~vehicle_length, MechaCar)
+yvals<- model$coefficients['vehicle_length']*MechaCar$vehicle_length + model$coefficients['(Intercept)']
+plt<- ggplot(MechaCar, aes(x=vehicle_length, y=mpg))
+plt +geom_point() + geom_line(aes(y=yvals), color='red')
+
+## plot the lm for ground clearance
+model<- lm(mpg~ground_clearance, MechaCar)
+yvals<- model$coefficients['ground_clearance']*MechaCar$ground_clearance + model$coefficients['(Intercept)']
+plt<- ggplot(MechaCar, aes(x=ground_clearance, y=mpg))
+plt +geom_point() + geom_line(aes(y=yvals), color='blue')
+
+## plot the lm for vehicle length
+model<- lm(mpg~vehicle_weight, MechaCar)
+yvals<- model$coefficients['vehicle_weight']*MechaCar$vehicle_weight + model$coefficients['(Intercept)']
+plt<- ggplot(MechaCar, aes(x=vehicle_weight, y=mpg))
+plt +geom_point() + geom_line(aes(y=yvals), color='green')
 
 ## get the Suspension_Coil.csv dataset
-suspension<- read.csv(file = "~/Bootcamp/MechaCar_Statistical_Analysis/Suspension_Coil.csv")
+suspension<- read.csv(file = "resources/Suspension_Coil.csv")
 
 head(suspension)
 
