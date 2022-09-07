@@ -22,7 +22,7 @@ Looking at the individual p-values, these variables provided a non-random amount
   - vehicle length
   - ground clearance
 
-The r squared value of the regression model is 0.71.  Meaning this model will be able to predict the mpg of a MechaCar vehicle 71% of the time.  The overall p-value of the regression is also significant.  Taken together, these statistics support rejection of the null hypothesis, which states that the slope of the regression model is zero.
+The r squared value of the regression model is 0.71.  Meaning this model will be able to predict the mpg of a MechaCar vehicle 71% of the time.  The overall p-value of the regression is also significant.  Taken together, these statistics support rejection of the null hypothesis, which states that the slope of the regression model is zero.  Vehicle length and ground clearance have a significant relationship with Mechacar mpg.  Because the intercept is also statistically significant, the data may need transformation or other variables could be explored which may better explain the variabilty in mpg.
 
 Questions: 
 
