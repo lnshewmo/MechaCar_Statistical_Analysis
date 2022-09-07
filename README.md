@@ -4,6 +4,8 @@ Using R to review production data for factors affecting vehicle performance
 
 ## Linear Regression to Predict MPG
 
+Goal: Where vehicle performance is measured as mpg (miles per gallon), can we design a linear model to predict mpg?
+
 The following metrics were collected on 50 prototype vehicles:
 - vehicle length
 - vehicle weight
@@ -12,17 +14,15 @@ The following metrics were collected on 50 prototype vehicles:
 - AWD (all-wheel drivetrain)
 - mpg (miles per gallon)
 
-The goal is to design a linear model to predict mpg.
 Using the `lm()` method in R, the following linear model was generated:
 
 ![lm image](https://github.com/lnshewmo/MechaCar_Statistical_Analysis/blob/main/images/MechaCar_LM.png)
 
-These variables provided a non-random amount of variance to the mpg values in the dataset at a significance level of 0.05:
-  - vehicle length and ground clearance
+Looking at the individual p-values, these variables provided a non-random amount of variance to the mpg values in the dataset at a significance level of 0.05:
+  - vehicle length
+  - ground clearance
 
-The r squared value of the regression model is 0.71.
-
-These statistics support rejection of the null hypothesis, which states that the slope of the regression model is zero.
+The r squared value of the regression model is 0.71.  Meaning this model will be able to predict the mpg of a MechaCar vehicle 71% of the time.  The overall p-value of the regression is also significant.  Taken together, these statistics support rejection of the null hypothesis, which states that the slope of the regression model is zero.
 
 Questions: 
 
