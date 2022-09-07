@@ -13,15 +13,21 @@ The following metrics were collected on 50 prototype vehicles:
 - mpg (miles per gallon)
 
 The goal is to design a linear model to predict mpg.
-Using R, the following data summary was generated:
+Using the `lm()` method in R, the following linear model was generated:
 
 ![lm image](https://github.com/lnshewmo/MechaCar_Statistical_Analysis/blob/main/images/MechaCar_LM.png)
 
 These variables provided a non-random amount of variance to the mpg values in the dataset at a significance level of 0.05:
   - vehicle length and ground clearance
 
-The slope of the linear model 
+The r squared value of the regression model is 0.71.
+
+These statistics support rejection of the null hypothesis, which states that the slope of the regression model is zero.
+
+Questions: 
+
 -Is the slope of the linear model considered to be zero? Why or why not?
+
 -Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
 ## Summary Statistics on Suspension Coils
