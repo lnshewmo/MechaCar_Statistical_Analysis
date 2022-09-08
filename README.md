@@ -48,17 +48,23 @@ Figure 1:  t-test for all manufacturing lots and population mean
 
 The overall mean is not different from the population mean at a significance level of 0.05 but it is different at a significance level of 0.10.
 
+---
+
 Figure 2:  t-test for Lot 1 and population mean
 
 ![ttest](https://github.com/lnshewmo/MechaCar_Statistical_Analysis/blob/main/images/lot1.png)
 
 Lot 1 mean is equivalent to the population mean.
 
+---
+
 Figure 3:  t-test for Lot 2 and population mean
 
 ![ttest](https://github.com/lnshewmo/MechaCar_Statistical_Analysis/blob/main/images/lot2.png)
 
 Lot 2 mean is equal to the population mean.
+
+---
 
 Figure 4:  t-test for Lot 3 and population mean
 
@@ -69,8 +75,8 @@ This lot does not meet specification.
 
 ## Study Design: MechaCar vs Competition
 
-To design a study quantifying how the MechaCar performs against the competition, the first step is to define 'performance.'  The study should have a well-defined central question.  Next we can select what measures might affect performance, as well as determine what conditions should be held constant to reduce variation from external factors.  Domain knowledge in the area of automobile engineering and manufacturing would better identify potential manufacturing measures and variables (horsepower, suspension, wheel diameter, engine size). From the business and consumer standpoint we can explore factors that can affect sales (MSRP, gas vs. electric, city and highway mpg, safety rating).  Examples of factors to be held constant or controlled are: performing required maintenance at the recommended intervals, same grade of gas, same tire condition, all vehicles started at the same initial odometer reading, same proportions of highway and city miles.
+To design a study quantifying how the MechaCar performs against the competition, the first step is to define 'performance.'  The study should have a well-defined central question and metric.  Next we can select what measures might affect performance, as well as determine what conditions should be held constant to reduce variation from external factors.  Domain knowledge in the area of automobile engineering and manufacturing would better identify potential manufacturing measures and variables (horsepower, suspension, wheel diameter, engine size). From the business and consumer standpoint we can explore factors that can affect sales (MSRP, gas vs. electric, city and highway mpg, safety rating).  Examples of factors to be held constant or controlled are: performing required maintenance at the recommended intervals, same grade of gas, same tire condition, all vehicles started at the same initial odometer reading, same proportions of highway and city miles.
 
-Let's consider a study where we define performance as mpg and the scope of the study will be new gas-powered vehicles only, 200gal of 89 octane fuel. MPG will be measured as total distance travelled divided by 200 gal consumed. 50 vehicles of each competitor will participate.  We will measure engine size in liters, vehicle weight, vehicle length, ground clearance and wheel diameter.  These are all continuous numerical data types, therefore multiple linear regression is the appropriate test. We select a significance level of 0.05.
+Let's consider a hypothetical study where we define performance as the highest mpg and the scope of the study will be new gas-powered vehicles only.  For the experiment, 200 gal of 89 octane fuel will be used and mpg will be measured as total distance travelled divided by 200 gal. 50 vehicles of each competitor will participate.  We will measure engine size in liters, vehicle weight, vehicle length, ground clearance and wheel diameter.  These are all continuous numerical data types, therefore multiple linear regression is the appropriate test. 
 
-The null hypothesis is that the coefficients (\beta) are equal to zero (there is no relationship to mpg performance).  The alternative hypothesis is that one or more of the coefficents is not equal to zero (at least one variable has a relationship with performance).  To evaluate whether there is evidence to reject the null hypothesis, we will evaluate the p-value of the model, the r<sup>2</sup> value of the model and the individual p-values for each variable.
+The null hypothesis is that the coefficients, beta<sub>n</sub>, are equal to zero (there is no relationship to mpg performance).  The alternative hypothesis is that one or more of the coefficents is not equal to zero (at least one variable has a relationship with performance).  To evaluate whether there is evidence to reject the null hypothesis, we will evaluate the p-value of the model, the r<sup>2</sup> value of the model and the individual p-values for each variable.  A significance level of 0.05 will be used to evaluate the statistics.
